@@ -3,7 +3,7 @@ package com.sun.test;
 public class ReadBookDemo {
 
 	public static void main(String[] args) {
-		String content = read("533110");
+		String content = read("533496");
 		content = content.substring(content.indexOf("<div id=\"content\">"));
 		System.out.println(content);
 		
@@ -15,7 +15,6 @@ public class ReadBookDemo {
 	
 	
 	public static String read(String id){
-		String content = "";
 		return WebClient.sgSendGet("http://www.biquku.com/1/1065/"+id+".html", null);
 	}
 }

@@ -18,11 +18,8 @@ import org.apache.commons.httpclient.methods.GetMethod;
 import org.apache.commons.httpclient.methods.PostMethod;
 import org.apache.http.client.params.CookiePolicy;
 
-/**
- * HTTP请求组件
- * 
- * @author wgyi
- */
+
+@SuppressWarnings("deprecation")
 public class WebClient {
 	public static String downloadString(String url) throws IOException {
 		URL _url = new URL(url);
